@@ -1,0 +1,95 @@
+{
+  "name": "happy-ssh",
+  "version": "0.1.0-preview",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode dev --dest=dist-dev",
+    "build": "vue-cli-service build --mode prod --dest=dist-prod",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^4.0.0",
+    "animate.css": "4.1.0",
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "cropperjs": "1.5.9",
+    "element-plus": "^1.0.2-beta.33",
+    "happykit": "^1.4.1",
+    "highlight.js": "^10.1.1",
+    "js-md5": "0.7.3",
+    "mitt": "^2.1.0",
+    "node-sass": "^5.0.0",
+    "nprogress": "^0.2.0",
+    "sass-loader": "^10.1.0",
+    "tinymce": "^5.7.0",
+    "ua-parser-js": "^0.7.24",
+    "viewerjs": "^1.9.0",
+    "vue": "^3.0.7",
+    "vue-router": "^4.0.4",
+    "vuex": "^4.0.0",
+    "xterm": "^4.11.0",
+    "xterm-addon-attach": "^0.6.0",
+    "xterm-addon-fit": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@types/ua-parser-js": "^0.7.35",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "cp-cli": "^2.0.0",
+    "electron": "^12.0.1",
+    "electron-devtools-installer": "^3.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "handlebars": "^4.7.7",
+    "koa-route": "^3.2.0",
+    "koa-websocket": "^6.0.0",
+    "koa2": "^2.0.0-alpha.7",
+    "rimraf": "^3.0.2",
+    "ssh2": "^0.8.9",
+    "ssh2-sftp-client": "^6.0.1",
+    "through2": "^4.0.2",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.2",
+    "utf8": "^3.0.0",
+    "vue-cli-plugin-electron-builder": "^2.0.0-rc.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

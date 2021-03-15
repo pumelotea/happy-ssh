@@ -8,7 +8,6 @@ import 'animate.css'
 import 'xterm/css/xterm.css'
 import elementPlus from 'element-plus';
 import '../public/theme/light/default.css'
-import 'nprogress/nprogress.css'
 const app = createApp(App)
 app.use(router)
 app.use(http)
